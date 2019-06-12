@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   callApi = async () => {
-    const resp = await fetch('/api');
+    const resp = await fetch('http://ec2-54-193-57-34.us-west-1.compute.amazonaws.com:8080/api');
 
     window._resp = resp;
 
@@ -41,7 +41,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">I know, it's a boring React template</h1>
+          <h1 className="App-title">Boring App</h1>
+          <h2>It's so boring it's mildly interesting</h2>
         </header>
         <p>{this.state.message || 'No message'}</p>
       </div>
